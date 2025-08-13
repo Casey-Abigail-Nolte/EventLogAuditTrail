@@ -1,4 +1,5 @@
 import os
+import pyodbc
 import sys
 import pandas as pd  # Import pandas for DataFrame handling
 import config  # Import config module for database connection details
@@ -7,7 +8,7 @@ import time
 from functools import wraps
 from pydantic import BaseModel
 from typing import Optional
-from uvicorn import pyodbc
+
 
 def connect_to_database():
     try:
